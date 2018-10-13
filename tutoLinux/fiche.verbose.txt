@@ -1,0 +1,56 @@
+# A noter que vous pouvez tout le temps appuyez sur tabulation ( à gauche du "A") pour utiliser l'auto completion (très très utile) Si vous voulez plus d'information sur une commande taper 
+# "man commande", ou bien "commande -h" "commande -help" "commande --help" suivant les commandes Un des principes de bases de linux est de lire la documentation avant de poser une question, 
+# car très souvent une simple lecture de l'aide (qui est bien fournie) est largement suffisant pour répondre à vos questions, sinon sur les forums vous serez accueuillis par un gentil Read The 
+# Fucking Manual (RTFM : Monsieur, veuillez s'il vous plaît lire la documentation)
+
+# Fiche des commandes utilisées beaucoup en linux :
+man : ( manual )
+man [commande]
+donne toutes la documentation, sur la commande en question
+
+ls : ( List Directory )
+affiche le contenu du dossier dans lequel on est
+
+pwd : ( Print name of Working Directory)
+affiche le chemin daccès du dossier dans lequel on est
+
+cd : ( Change Directory )
+sert à changer de dossier
+
+cp : ( copy )
+cp source destination
+copie le fichier à l'endroit du chemin source, vers le chemin d'arrivée
+
+mv : ( move )
+mv source destination ( come le couper coller, et permet de renommer un fichier )
+
+rm : ( remove )
+rm -r ( pour effacer un fichier ou un dossier et tout le contenu )
+
+nano : ( Nano's ANOther editor ) [Ils aiment bien les noms a définition récursive, comme GNU pour : Gnu is Not Unix ]
+sert à écrire un fichier dans la console directement (les ^ c'est le bouton ctrl)
+# A l'université, on a des distributions de linux (ubuntu) qui possèdent une interface graphique et donc des editeurs de texte pour ceux qui ne veulent pas voir la console
+
+# Les commandes Git que l'on a vu en cours
+
+git clone [ adresse url ] : pour copier un dossier de Github, le dossier va être copier à l'endroit ou vous êtes dans la console ( pwd )
+
+git commit [ nom du fichier ] : ajoute le fichier à la liste des fichiers qui seront copié sur le server au prochain push
+Il faut écrire dans la console ce qui a été fait, ce fichier est edité en console, avec nano ( je crois ), il faut donc écrire ce que l'on veut,
+puis ctrl + O pour enregistrer, et ctrl + X pour quitter ( on peux quitter et enregistrer directement avec ctrl + X )
+
+git push : copie tous les fichiers qui ont été commit sur github
+
+git pull : pour récupérer les fichiers du serveur
+
+# Raccourcis pratique
+
+ctrl + D : raccourcis effectuant la commande exit, déconnecte l'utilisateur de la console ( en général, ferme la console ).
+ctrl + L : raccourcis effectuant la commande "clear", nettoie la console
+ctrl + C : arrête le processus en cours d'execution
+q (dans les aides) : quitte le menu
+ctrl + 1 (ou 2/3/4) : change de bureau (ou comment être invisible devant les professeurs)
+
+
+Voila ce qui me passe par la tête comme les trucs essentiels de linux, si jamais il manque des trucs, je les rajouterais
+Benito

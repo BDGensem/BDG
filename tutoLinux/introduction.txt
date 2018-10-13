@@ -1,0 +1,31 @@
+Coucou, si vous êtes la c'est que vous souhaitez apprendre les bases de linux, en pratique vous êtes devant un terminal en noir et blanc très surement un peu perdu car Windows nous cache le terminal
+Si vous êtes motivés pour un peu d'histoire, les premiers pc n'étaient que en console.
+
+Bon, l'histoire c'est pas mon fort.
+
+Linux c'est vaste, pour faire simple, en général, ça ne ressemble pas à windows ni à Mac.
+
+On va dans un premier temps se concentrer sur les console bash, appelée plus simplement console ou terminale.
+
+Tous les fichiers sont gérés à travers des chemin, [ ./ ] est le dossier dans lequel on se trouve [ ../ ] est le dossier parent
+
+Dans un terminal linux, il faut savoir quelque chose, vous êtes un utilisateur, vous avez des droits, par exemple, vous ne pouvez pas supprimer le dossier qui permet à votre linux de démarrer
+vous n'avez pas les droits. C'est un cas un peu extrême, mais vous pouvez avoir besoin de faire quelque chose sans en avoir les droits. Pour pallier à ce problème, il existe le préfixe
+sudo (Super User Done Once) en gros, la prochaine commande est effectué en tant que le super utilisateur, lui il a le droit de tout faire, donc il est potentiellement dangereux, car si vous
+ne faites pas attention, vous pouvez perdre tout vos fichiers par exemple, ou bien (comme moi l'autre jour) supprimer un processus qui m'a supprimer les pilotes wifi, et pour avoir le pilote
+il fallait le télécharger, mais sans wifi, c'est compliqué. Ce super utilisateur s'appelle root
+
+Donc pour résumer : sudo commande, ca transforme :
+
+utilisateur : sudo commande 
+
+en
+
+root : commande
+
+et comme le root à les droits, et bien votre commande pourra être executé, en pratique même si on sait ce qu'on fait, il se peut que l'on soit fatigué et donc ne pas être root, permet de ne pas
+faire de bêtises sur son ordinateur.
+
+#####
+
+Vocabulaire : on parle de répertoire plutôt que de dossier, les fichiers n'ont pas besoins d'extensions pour être ouvert dans un terminal, 

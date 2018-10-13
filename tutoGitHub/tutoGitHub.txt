@@ -1,0 +1,37 @@
+On installe le logiciel, on lance le git bash (la console/le terminal) dans le bon dossier, on télécharge le dossier de gitlab dans windows.
+
+- Installer git for desktop [ Lien à rajouter ]
+
+- Explorateur de fichier, aller dans le dossier voulu
+- clic droit, git bash
+- git clone [url] ./
+
+Ensuite, pour utiliser github dans la suite
+
+Quand on créer un nouveau fichier, dans un dossier déja existant sur github :
+- git add [ nom du fichier ]
+
+Quand on créer un nouveau dossier, on ne peut pas l'ajouter s'il n'a pas de contenu,
+il faut donc, créer un dossier, créer un fichier dedans, et ensuite ajouter les 2 :
+- git add [ nom du dossier ]
+- git add [ nom du dossier ]/[ nom du fichier ]
+
+Une fois que les fichiers ( et dossiers ) ont été créés
+il faut les enregistrer localement, puis sur github ( commit, puis push )
+- git commit -am "message du commit" (-a, pour commit toutes les modifications, -m , pour écrire directement le message que l'on veut )
+- git push
+
+Pour déplacer un fichier d'un dossier à un autre, il faut le deplacer ( avec l'explorateur de windows par exemple ), ensuite, il faut le rajouter à git ( add ), et le supprimer ( au sens de git )
+- git add [le fichier à son nouvel emplacement]
+- git rm [le fichier à son premier emplacement]
+
+- git commit -am "message"
+- git push
+
+De plus, si vous êtes plusieurs à modifier des fichiers différents (c'est important, ils doivent être différent), il faudra faire un [git pull] avant de pouvoir push, donc faire :
+
+- git commit -am "message"
+- git pull
+- git push
+
+Si jamais vous avez modifié un même fichier à plusieurs, ça crée des problèmes de branchements un peu compliqué à traiter (donc essayer de les éviter)

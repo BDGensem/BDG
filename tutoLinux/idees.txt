@@ -1,0 +1,25 @@
+#creer un dossier pour y ranger un ensemble de note
+pwd
+#~=/home/user
+ls -la
+cd Documents
+mkdir prise de note
+nano base
+
+#modifier la console avec le fichier de configuration
+cd ..
+cd ~
+nano .bashrc
+#lire les commentaires
+
+#copier le projet a partir d'une cle USB
+cd /media/ #tab tab
+cp ./projet ~/
+cd
+
+#creer un depot github et les faire travailler par binome pour voir les differents conflits
+#cas classique pull commit push
+#cas conflit
+#usr1 : pull 
+#usr2 : pull commit push
+#usr1 : commit push (error) pull commit push

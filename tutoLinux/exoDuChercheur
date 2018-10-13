@@ -1,0 +1,41 @@
+ls
+ls -l
+cd www/
+touch toto.txt
+echo "Bonjour Jean-Luc" > index.txt
+ls -l
+rm toto.txt
+mv index.txt index.html
+man man
+man ls
+more index.html
+less index.html
+cat index.html
+man cat
+echo "Bienvenu chez moi" > suite.txt
+mv index.html debut.txt
+cat debut.txt suite.txt > index.html
+echo "<h3>Bonjour Jean-Luc</h3>" > debut.txt
+cat debut.txt suite.txt > index.html
+cd ~
+ls -l
+ls -l www/
+ls -l www/index.html
+chmod 600 www/index.html
+chmod 640 www/index.html
+pwd
+ls -al /users/home/
+ls -al ..
+ls -l /bin/
+ls ../..
+ls -l /users/home/ > ~/www/liste.txt
+ls -l /users/home/ | wc -l
+wc liste.txt
+which wc
+ls -l /users/home/ | grep etu | wc -l
+ssh charlemagne
+ls -l /users/home/ | grep " mmi1 " | cut -c 16-25 | sed -e 's/\(.*\)/<li><a href="\/www\/\1">\1<\/a><\/li>/' > www/liste.html
+find /etc -name httpd.conf -exec cat {} \; 2>/dev/null
+history
+
+ls -l $(echo $PATH | sed -e 's/:/ /g') | grep ^-........x | sed -e 's/ \+/;/g' | cut -d ';' -f 9 | sort | sed 's/\(.*\)/<li><strong>\1<\/strong> : Ã dÃ©crire<\/li>/' > www/cmds.html

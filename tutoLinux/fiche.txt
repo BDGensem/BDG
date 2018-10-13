@@ -1,0 +1,23 @@
+toutes les commandes peuvent recevoir d'autres paramètres, à voir avec la doc ( man [commande], [man man] marche aussi )
+
+man [commande]
+ls
+pwd
+cd [chemin]
+cp
+mv
+rm
+nano
+
+git clone [url] [chemin d'arrivée, par défaut le répertoire ./]
+git commit
+git push
+git pull
+git tag
+git tag [version]
+
+ctrl + D
+ctrl + L
+ctrl + C
+q
+
