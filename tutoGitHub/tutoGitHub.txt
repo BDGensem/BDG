@@ -1,4 +1,4 @@
-On installe le logiciel, on lance le git bash (la console/le terminal) dans le bon dossier, on télécharge le dossier de gitlab dans windows.
+On installe le logiciel, on lance le git bash (la console/le terminal) dans le bon dossier, on télécharge le dossier de github dans windows.
 
 - Installer git for desktop [ Lien à rajouter ]
 
@@ -6,15 +6,18 @@ On installe le logiciel, on lance le git bash (la console/le terminal) dans le b
 - clic droit, git bash
 - git clone [url] ./
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ensuite, pour utiliser github dans la suite
 
 Quand on créer un nouveau fichier, dans un dossier déja existant sur github :
 - git add [ nom du fichier ]
+- git add -A ( ajoute tous les nouveaux fichier créés )
 
 Quand on créer un nouveau dossier, on ne peut pas l'ajouter s'il n'a pas de contenu,
 il faut donc, créer un dossier, créer un fichier dedans, et ensuite ajouter les 2 :
 - git add [ nom du dossier ]
 - git add [ nom du dossier ]/[ nom du fichier ]
+- git add -A ( et plus besoin de s'embêter, néanmoins, si il y a eu beaucoup de modification, et que l'on ne veut pas tout commit, il faut éviter le -A )
 
 Une fois que les fichiers ( et dossiers ) ont été créés
 il faut les enregistrer localement, puis sur github ( commit, puis push )
@@ -25,6 +28,8 @@ Pour déplacer un fichier d'un dossier à un autre, il faut le deplacer ( avec l
 - git add [le fichier à son nouvel emplacement]
 - git rm [le fichier à son premier emplacement]
 
+( A vérifier : git add -A s'occupe d'ajouter les fichiers rajouter ET de supprimer au sens de Git )
+
 - git commit -am "message"
 - git push
 
@@ -34,4 +39,4 @@ De plus, si vous êtes plusieurs à modifier des fichiers différents (c'est imp
 - git pull
 - git push
 
-Si jamais vous avez modifié un même fichier à plusieurs, ça crée des problèmes de branchements un peu compliqué à traiter (donc essayer de les éviter)
+Si jamais vous avez modifié un même fichier à plusieurs, ça crée des problèmes de branchements un peu compliqué à traiter ( donc essayer de les éviter )
