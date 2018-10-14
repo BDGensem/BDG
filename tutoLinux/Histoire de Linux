@@ -1,64 +1,63 @@
-Des systèmes d'exploitations ou OS (Operating System) pour les intimes, il en a existé plusieurs,
-certains ont perduré tel que windows, ou MacOS (et oui l'OS de Mac), certains ont disparus.
+Des systèmes d'exploitations ou OS (Operating System) pour les intimes, il en a existés plusieurs,
+certains ont perduré tel que windows, ou MacOS (et oui l'OS de Mac), certains ont disparu.
 
-Avant toute chose, qu'es qu'un sysyème d'exploitation ?
-C'est un ensemble de programme qui ont été créé pour rentre utilisable les composants électroniques de notre ordinateur.
-En gros, l'OS c'est le machiniste, vous lui demandez gentiment : je veux ouvrir une fenetre pour voir ce qu'il y a dans ma clé USB
-C'est lui qui va charger la clé USB,
-lui demander comment elle fonctionne, si elle vas bien, la famille, s'il n'a pas été débranché sauvagement sans préavis
-comment elle a été formaté,
-Lui donner une addresse sur l'ordinateur (genre E:/ oui il a beaucoup d'imagination :p)
-Charger la fenetre en memoire, décider de où l'afficher sur l'éran, sa taille
-et caetera.
+Avant toute chose, qu'est-ce qu'un système d'exploitation ?
+C'est un ensemble de programmes qui ont été créés pour rendre utilisable les composants électroniques de notre ordinateur.
+En gros, l'OS c'est le machiniste, vous lui demandez gentiment : je veux ouvrir une fenêtre pour voir ce qu'il y a dans ma clé USB,
+c'est lui qui va charger la clé USB,
+lui demander comment elle fonctionne, si elle va bien, la famille, si elle n'a pas été débranché sauvagement sans préavis
+comment elle a été formatée,
+lui donner une addresse sur l'ordinateur (genre E:/ oui il a beaucoup d'imagination :p),
+charger la fenêtre en mémoire, décider de où l'afficher sur l'éran, sa taille et caetera.
 
-En fait ce schema est encore trop grossier pour parler de l'histoire de Linux ou plutôt GNU/Linux mais on y reviendra.
-Nous sommes début des années 80, bon l'ordinateur c'est encore haustère, un ecran avec des lignes de commandes et c'est tout.
+En fait ce schéma est encore trop grossier pour parler de l'histoire de Linux ou plutôt GNU/Linux mais on y reviendra.
+Nous sommes début des années 80, bon l'ordinateur c'est encore austère, un ecran avec des lignes de commandes et c'est tout.
 L'un des OS de l'époque, c'est UNIX, le problème de UNIX c'est qu'il est payant et il coûte cher.
 
 C'est pourquoi un projet apparait en 83 le projet GNU (GNU's Not UNIX, on appelle ça un acronyme récursif)
-L'objectif est de créé un OS libre, mais tout en étant compatible avec UNIX.
-En effet il existe un ensemble de standard POSIX et single UNIX specification, qui permet d'assurer une certaine compatibilité.
-On retrouve notament les commandes du terminal (ligne de commande), la gestion du système de fichier, le multi-ulisateur
-Alors l'aspect multi-utilisateur signifie que plusieurs personnes peuvent être connecté en même temps sur le même ordinateur
-Donc on a projet GNU compatible UNIX, qui finir d'être développé en 90, mais il lui manque un truc, c'est un noyau.
+L'objectif est de créer un OS libre, mais tout en étant compatible avec UNIX.
+En effet il existe un ensemble de standard POSIX et single UNIX specification, qui permet d'assurer une certaine compatibilitée.
+On retrouve notamment les commandes du terminal (ligne de commande), la gestion du système de fichier, le multi-ulisateur.
+Alors l'aspect multi-utilisateur signifie que plusieurs personnes peuvent être connectées en même temps sur le même ordinateur.
+Donc on a un projet GNU compatible UNIX, qui finit d'être développé en 90, mais il lui manque un truc, c'est un noyau.
 
 Alors un noyau qu'est ce que c'est ?
 Nous allons maintenant faire une disctinction dans notre définition de l'OS:
-on vas séparer le noyau (ou kernel en anglais) du reste de l'OS, comme son nom l'indique le noyau est au centre
-C'est lui qui vas vraiment faire le lien entre les logiciels et le matériel, et donc d'avoir une couche d'abastraction du matériel
+on va séparer le noyau (ou kernel en anglais, comme en maths tu sais) du reste de l'OS, comme son nom l'indique le noyau est au centre,
+c'est lui qui va vraiment faire le lien entre les logiciels et le matériel, et donc d'avoir une couche d'abstraction du matériel.
 En soit, lorsque vous créez un programme et que vous voulez stocker de l'information dans une variable,
-c'est le noyau qui vas vous dire : "ok j'ai un peu de place à cet endroit dans la memoire vive, tu vas pouvoir y stocker ta variable"
-C'est lui qui gère l'ordonnacement des tâches,lorsqu'on lance plusieus logiciel, c'est lui qui vas dire :
+c'est le noyau qui va vous dire : "ok j'ai un peu de place à cet endroit dans la memoire vive, tu vas pouvoir y stocker ta variable"
+C'est lui qui gère l'ordonnancement des tâches, lorsqu'on lance plusieurs logiciels, c'est lui qui va dire :
 "ok toi tu fonctionnes 10ms, après ce sera ton tour paint, ne t'en fait pas,
 oui firefox je relance une demande de paquet pour ton téléchargement" 
-De base on n'envoie pas directement de commande directement au noyau, par ce qu'il y a beaucoup moins de contrôle de sécurité
-Typiquement, si vous demandez directement au noyau d'éteindre l'ordinateur il vas pas s'éternisait à vérifier:
-- es que les programmes se sont bien fermé, il demanderait pas une confirmation de sauvegarde avant fermeture
-- es qu'il n'y aurait pas d'autre personne connecté, faudrait les prévenir quand même
-Voilà, voilà donc le noyau c'est un peu brut de décoffrage, et on peut pas faire tellement de chose directement avec
+De base on n'envoie pas directement de commande directement au noyau, parcequ'il y a beaucoup moins de contrôle de sécurité
+Typiquement, si vous demandez directement au noyau d'éteindre l'ordinateur il va pas s'éterniser à vérifier:
+- est-ce-que les programmes se sont bien fermés, il demandera pas une confirmation de sauvegarde avant fermeture
+- est-ce-qu'il n'y aurait pas d'autre personnes connectées, faudrait les prévenir quand même
+Voilà, voilà donc le noyau c'est un peu brut de décoffrage, et on peut pas faire tellement de chose directement avec.
 
 Bon, revenons à notre histoire avec UNIX c'est OS multi-ultilisateur, et GNU une copie mais compatible,
 Auquel il manque un noyau, il existe bien un projet, le projet HURD, qui cherche à exploiter une version du noyau BSD,
 et l'adapter, malheureusement il contient du code propriétaire qu'ils n'arrivent pas à enlever.
-Une nouvelle solution apparait, est de repartir du noyau March (un noyau libre) et de l'adapter mis cela s'avére compliquer...
+Une nouvelle solution apparait, c'est de repartir du noyau March (un noyau libre) et de l'adapter mis cela s'avère compliqué...
 
-Pendant ce temps, en Finlande l'université d'Helvinski,
-un certain Linus Torvalds trouve très pénible la faible disponibilité des serveurs UNIX
-Il lance son propre projet de développement de noyau le 25 aout 1991, qu'il partage sur un forum  sous licence libre,
+Pendant ce temps, en Finlande à l'université d'Helsinki,
+un certain Linus Torvalds trouve très pénible la faible disponibilité des serveurs UNIX.
+Il lance son propre projet de développement de noyau le 25 août 1991, qu'il partage sur un forum  sous licence libre,
 et donc compatible avec GNU.
 
-A partir de là le noyau proposé par Linus Torvalds, répondant au nom de Linux, viens remplacé le projet HURD,
-Et le système d'exploitation GNU/Linux voit le jour, depuis lors énormément de dérivé ont vut le jour
-mais tout en gardant la même base, et donc en étant type UNIX
+A partir de là, le noyau proposé par Linus Torvalds, répondant au nom de Linux, vient remplacer le projet HURD,
+et le système d'exploitation GNU/Linux voit le jour, depuis lors énormément de dérivés ont vues le jour
+mais tout en gardant la même base, et donc en étant type UNIX.
 En effet en étant un logiciel, libre tout le monde a le droit de le reprendre à son compte
-et chaque version ainsi créé est appelé une distribution, et une distribution peut ainsi être reprise,
-par exemple : Debian est une distribution, et Ubuntu se base sur Debian
-Je n'ai jamais eu affaire à une version pure de GNU/Linux, je ne suis même pas sur que ça soit faisable au jour d'aujourd'hui,
-ou que ça est le moindre sens.
+et chaque version ainsi créée est appelée une distribution, et une distribution peut ainsi être reprise,
+par exemple : Debian est une distribution, et Ubuntu se base sur Debian.
+Je n'ai jamais eu affaire à une version pure de GNU/Linux, je ne suis même pas sûr que ça soit faisable au jour d'aujourd'hui,
+ou que ça aitle moindre sens.
 
 Enfin pour conclure, je tiens à signaler que macOS est de type UNIX, celà signifie que tout ce que l'on fait
 dans un terminal sur Linux, on peut le faire sur Mac.
 Et une petite touche de fun, Linux, du fait de sa liberté a plusieurs possibilité d'apparence, de bureau,
-plus ou moins lourde, plus ou moins belle, plus ou moins ergonomique. Et certains ce sont amusé à copier l'apparence de mac ;)
+plus ou moins lourde, plus ou moins belle, plus ou moins ergonomique. Et certains se sont amusés à copier l'apparence de mac ;)
 
 
