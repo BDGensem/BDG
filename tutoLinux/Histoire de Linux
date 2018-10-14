@@ -14,7 +14,7 @@ En fait ce schéma est encore trop grossier pour parler de l'histoire de Linux o
 Nous sommes début des années 80, bon l'ordinateur c'est encore austère, un ecran avec des lignes de commandes et c'est tout.
 L'un des OS de l'époque, c'est UNIX, le problème de UNIX c'est qu'il est payant et il coûte cher.
 
-C'est pourquoi un projet apparait en 83 le projet GNU (GNU's Not UNIX, on appelle ça un acronyme récursif)
+C'est pourquoi un projet apparait en 83 le projet GNU (GNU's Not UNIX, on appelle ça un acronyme récursif).
 L'objectif est de créer un OS libre, mais tout en étant compatible avec UNIX.
 En effet il existe un ensemble de standard POSIX et single UNIX specification, qui permet d'assurer une certaine compatibilitée.
 On retrouve notamment les commandes du terminal (ligne de commande), la gestion du système de fichier, le multi-ulisateur.
@@ -22,22 +22,22 @@ Alors l'aspect multi-utilisateur signifie que plusieurs personnes peuvent être 
 Donc on a un projet GNU compatible UNIX, qui finit d'être développé en 90, mais il lui manque un truc, c'est un noyau.
 
 Alors un noyau qu'est ce que c'est ?
-Nous allons maintenant faire une disctinction dans notre définition de l'OS:
+Nous allons maintenant faire une disctinction dans notre définition de l'OS :
 on va séparer le noyau (ou kernel en anglais, comme en maths tu sais) du reste de l'OS, comme son nom l'indique le noyau est au centre,
 c'est lui qui va vraiment faire le lien entre les logiciels et le matériel, et donc d'avoir une couche d'abstraction du matériel.
 En soit, lorsque vous créez un programme et que vous voulez stocker de l'information dans une variable,
-c'est le noyau qui va vous dire : "ok j'ai un peu de place à cet endroit dans la memoire vive, tu vas pouvoir y stocker ta variable"
-C'est lui qui gère l'ordonnancement des tâches, lorsqu'on lance plusieurs logiciels, c'est lui qui va dire :
-"ok toi tu fonctionnes 10ms, après ce sera ton tour paint, ne t'en fait pas,
+c'est le noyau qui va vous dire : "Ok j'ai un peu de place à cet endroit dans la memoire vive, tu vas pouvoir y stocker ta variable",
+c'est lui qui gère l'ordonnancement des tâches, lorsqu'on lance plusieurs logiciels, c'est lui qui va dire :
+"Ok toi tu fonctionnes 10ms, après ce sera ton tour paint, ne t'en fait pas,
 oui firefox je relance une demande de paquet pour ton téléchargement" 
-De base on n'envoie pas directement de commande directement au noyau, parcequ'il y a beaucoup moins de contrôle de sécurité
+De base on n'envoit pas directement de commande au noyau, parcequ'il y a beaucoup moins de contrôle de sécurité.
 Typiquement, si vous demandez directement au noyau d'éteindre l'ordinateur il va pas s'éterniser à vérifier:
-- est-ce-que les programmes se sont bien fermés, il demandera pas une confirmation de sauvegarde avant fermeture
-- est-ce-qu'il n'y aurait pas d'autre personnes connectées, faudrait les prévenir quand même
+- Est-ce-que les programmes se sont bien fermés, il demandera pas une confirmation de sauvegarde avant fermeture.
+- Est-ce-qu'il n'y aurait pas d'autre personnes connectées, faudrait les prévenir quand même.
 Voilà, voilà donc le noyau c'est un peu brut de décoffrage, et on peut pas faire tellement de chose directement avec.
 
 Bon, revenons à notre histoire avec UNIX c'est OS multi-ultilisateur, et GNU une copie mais compatible,
-Auquel il manque un noyau, il existe bien un projet, le projet HURD, qui cherche à exploiter une version du noyau BSD,
+auquel il manque un noyau, il existe bien un projet, le projet HURD, qui cherche à exploiter une version du noyau BSD,
 et l'adapter, malheureusement il contient du code propriétaire qu'ils n'arrivent pas à enlever.
 Une nouvelle solution apparait, c'est de repartir du noyau March (un noyau libre) et de l'adapter mis cela s'avère compliqué...
 
@@ -53,7 +53,7 @@ En effet en étant un logiciel, libre tout le monde a le droit de le reprendre �
 et chaque version ainsi créée est appelée une distribution, et une distribution peut ainsi être reprise,
 par exemple : Debian est une distribution, et Ubuntu se base sur Debian.
 Je n'ai jamais eu affaire à une version pure de GNU/Linux, je ne suis même pas sûr que ça soit faisable au jour d'aujourd'hui,
-ou que ça aitle moindre sens.
+ou que ça n'ait le moindre sens.
 
 Enfin pour conclure, je tiens à signaler que macOS est de type UNIX, celà signifie que tout ce que l'on fait
 dans un terminal sur Linux, on peut le faire sur Mac.
