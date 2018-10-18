@@ -1,7 +1,7 @@
 # BDG
 Le contenu de l'association
 
-#Concours
+# Concours
 Le concours organisé par le shaker session 2018
 
 # Tuto Linux
